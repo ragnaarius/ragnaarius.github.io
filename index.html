@@ -5,10 +5,20 @@
 		<title>Ragnaar's Dark House</title>
 		<style>
 			body { background: url(./img/bg.png) repeat #000; }
+			.logo {width: 214px; left: 50%; top: 50%; margin-left: -107px; margin-top: -107px; position: absolute; transition: 10s; opacity: 0;}
+			.logo img { box-shadow: 0 0 40px 20px rgba(0,0,0,0.8); border-radius: 50%}
+			.logo.loaded {opacity: 1;}
 		</style>
+		<script>
+		window.onload = function () {
+			document.getElementById('logo').className += ' loaded';
+		}
+		</script>
 	</head>
 <body>
-
+<div id="logo" class="logo">
+<img src="./img/raven.png" alt="" />
+</div>
 
 </body>
 </html>
